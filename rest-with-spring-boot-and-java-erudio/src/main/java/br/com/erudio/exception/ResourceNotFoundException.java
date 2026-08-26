@@ -3,10 +3,10 @@ package br.com.erudio.exception;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.http.HttpStatus;
 
-@ResponseStatus(HttpStatus.BAD_REQUEST)
-public class UnsupportedMathOperation extends RuntimeException {
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ResourceNotFoundException extends RuntimeException {
 
-    public UnsupportedMathOperation(String message) {
+    public ResourceNotFoundException(String message) {
         super(message);
     }
 }
